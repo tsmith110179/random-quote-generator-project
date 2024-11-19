@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import quotes from './assets/quotes.json';
-import { FaXTwitter, FaQuoteLeft, FaQuoteRight} from 'react-icons/fa';
+import { FaTwitter, FaQuoteLeft, FaQuoteRight} from 'react-icons/fa';
 import './App.css';
-/*import { FaTwitter } from 'react-icons/fa6';*/
+
 
 interface Quote {
   quote: string;
@@ -54,7 +54,7 @@ function App() {
         transition, 
       }}
       >
-        <FaXTwitter color="white" />
+        <FaTwitter color="white" />
       </a>
       <button id="new-quote" onClick={changeQuote} style={{ backgroundColor: randomColor, transition }}>
         Change Quote
